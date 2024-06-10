@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Nitram Accountants-Africa</title>
+    <link rel="icon" type="image/x-icon" type="image/x-icon" sizes="16x16" href="Images/favicon.ico/favicon (1).ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: "Roboto", sans-serif;
+            overflow-x: hidden;
+        }
+
+
+        #sidebar-wrapper {
+            z-index: 1000;
+            position: fixed;
+            left: 250px;
+
+            width: 0;
+            height: 100%;
+            margin-left: -250px;
+            overflow-y: auto;
+            background-color: lightgray;
+
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+
+
+        /* Sidebar Styles */
+
+        .sidebar-nav {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            text-indent: 20px;
+            line-height: 40px;
+        }
+
+        .sidebar-nav li a {
+            /* display: block; */
+            text-decoration: none;
+            color: #03C03C;
+        }
+
+        .sidebar-nav li a:hover {
+            text-decoration: none;
+            color: #2F3B69;
+            /* background: lightgrey; */
+        }
+
+        .sidebar-nav li a:active,
+        .sidebar-nav li a:focus {
+            text-decoration: none;
+        }
+
+        .sidebar-nav>.sidebar-brand {
+            height: 65px;
+            font-size: 18px;
+            line-height: 60px;
+        }
+
+        .sidebar-nav>.sidebar-brand a {
+            color: #03C03C;
+        }
+
+        .sidebar-nav>.sidebar-brand a:hover {
+            color: #2F3B69;
+            background: none;
+        }
+
+        @media(min-width:768px) {
+            #wrapper {
+                padding-left: 220px;
+            }
+
+            #wrapper.toggled {
+                padding-left: 0;
+            }
+
+            #sidebar-wrapper {
+                width: 200px;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                width: 40px;
+
+
+            }
+
+            #wrapper.toggled span {
+                visibility: hidden;
+
+            }
+
+            #wrapper.toggled i {
+                float: right;
+            }
+        }
+
+        @media(max-width:414px) {
+
+            #wrapper.toggled #page-content-wrapper {
+                position: absolute;
+                margin-right: 60px;
+            }
+
+            #wrapper.toggled {
+                padding-right: 60px;
+            }
+
+            #wrapper {
+                padding-left: 20px;
+            }
+
+            #wrapper.toggled {
+                padding-left: 0;
+            }
+
+            #sidebar-wrapper {
+                width: 50px;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- <div class="container">
+        <div class="row">
+            <h2>Some text</h2>
+            <hr/>
+            
+             <div id="wrapper"> -->
+
+    <div id="sidebar-wrapper">
+
+        <ul class="sidebar-nav" style="margin-left:0;">
+            <h2 class="h-100 text-white">GAS4E</h2>
+            <li>
+                <a href="#overview"><span style="margin-left:10px;">Program Overview</span> </a>
+            </li>
+            <li>
+                <a href="#intro"> <span style="margin-left:10px;"> Introduction</span> </a>
+            </li>
+            <li>
+                <a href="#target"> <span style="margin-left:10px;"> For Who?</span> </a>
+            </li>
+            <li>
+                <a href="#objective"> <span style="margin-left:10px;"> Program Objectives</span> </a>
+            </li>
+            <li>
+                <a href="#structure"><span style="margin-left:10px;">Program Structure </span> </a>
+            </li>
+            <li>
+                <a href="#testimonials"> <span style="margin-left:10px;">Testimonials</span> </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <section id="hero">
+        <h2> GAS4E Program</h2>
+        <!-- <img src="Images/school.jpg"
+            style="background-size: cover; width: 100%; height: 100%; background-attachment: fixed; top: 0; margin: 0;"> -->
+    </section>
+
+    <section id="overview">
+        <h2>Program Overview </h2>
+    </section>
+
+    <section id="intro">
+        <h2>Introduction </h2>
+    </section>
+
+    <section id="target">
+        <h2>For Who? </h2>
+    </section>
+
+    <section id="objective">
+        <h2>Program Objectives</h2>
+    </section>
+
+    <section id="structure">
+        <h2> Program Structure</h2>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+    </section>
+</body>
+
+</html>
