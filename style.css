@@ -383,7 +383,7 @@ button:hover{
 
 
 .popup{
-  background: rgb(0, 0, 0,0.6);
+  /* background: rgb(0, 0, 0,0.6); */
   width: 100%;
   height: 100%;
   position: absolute;
@@ -395,7 +395,7 @@ button:hover{
 .popup-content{
   height: 450px;
   width: 500px;
-  background: #fff;
+  background: #2F3B69;
   padding: 20px;
   border-radius: 5px;
   position: relative;
@@ -410,12 +410,94 @@ input{
 
 
 /* ------Our Team------- */
-.team .person{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.team .person img{
+.card-image{
+  position: relative;
   height: 150px;
   width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+  /* padding: 20px #2F3B69; */
 }
+
+.card-image .card-img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid #2F3B69;
+
+}
+#team{
+  min-height: 100vh;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  background-color: white;
+}
+.card{
+  background-color: #fff;
+  border-radius: 25px;
+  width: 320px;
+}
+
+.slide-content{
+  margin: 0 40px;
+  padding: 45px 20px ;
+}
+.image-content, .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #2F3B69;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.overlaye{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #03C03C;
+  border-radius: 25px 25px 0 50px;
+
+}
+.overlaye::before, .overlaye::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #03C03C ;
+}
+.overlaye::after{
+  border-radius: 0 50px 0 0;
+  background-color: white;
+}
+.image-content{
+  row-gap: 5px;
+  position: relative;
+  padding: 25px 0;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  background-color: #2F3B69;
+  padding: 40px;
+}
+/* 
+ .swiper-navBtn{
+  color: #03C03C;
+ }
+  */
