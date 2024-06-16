@@ -14,6 +14,7 @@ h1,h2,h3,h4,h5,h6{
 .navbar-toggler{
   border: none;
   font-size: 1.25rem;
+  color: #03C03C;
   
 }
 .navbar-toggler:focus{
@@ -391,6 +392,7 @@ button:hover{
   justify-content: center;
   align-items: center ;
   text-align: center;
+  z-index: 10000;
 }
 .popup-content{
   height: 450px;
@@ -501,3 +503,12 @@ border: 4px solid #2F3B69;
   color: #03C03C;
  }
   */
+
+
+
+  @media screen and (max-width: 680px) {
+    .getStartedBtn {
+    margin-left:80px !important;
+    }
+  }
+
