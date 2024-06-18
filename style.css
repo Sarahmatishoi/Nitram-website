@@ -10,6 +10,7 @@ body{
  }
 h1,h2,h3,h4,h5,h6{
   font-weight: 800 !important;
+  color: #03C03C;
 }
 .navbar-toggler{
   border: none;
@@ -31,6 +32,13 @@ h1,h2,h3,h4,h5,h6{
   color: #03C03C;
   font-size: 24px;
   transition: 0.3s color;
+}
+.offcanvas.show {
+  height: 100vh; /* Set offcanvas height to cover the full viewport height */
+  overflow-y: auto; /* Add scrollbar if content exceeds viewport height */
+  width: 80%; /* Optional: Adjust width of offcanvas menu */
+  max-width: 400px; /* Optional: Set maximum width of offcanvas menu */
+  background-color: lightgray; /* Optional: Adjust background color */
 }
 
 .nav-link{
@@ -109,6 +117,7 @@ section{
   right: 0;
   bottom: 0;
   left: 0;
+  height: 100vh;
 }
 
 h1{
@@ -279,10 +288,31 @@ h2{
   display: block;
   transform: all 0.3s ease;
 }
+
+.link-hover {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.link-hover:hover {
+  color: #03C03C; /* Change to the color you want on hover */
+  transition: 0.3s ease-in-out;
+  transform: translateX(-50%);
+
+}
+
+.link-hover:hover::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #03C03C; /* Change to the color you want for the underline */
+  
+}
 .icons i{
-  /* background: -webkit-linear-gradient(#2F3B69,#03C03C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+ 
   color: #2F3B69  ;
   width: 100%;
   border-radius: 50%;
@@ -380,7 +410,7 @@ button:hover{
 .slick-initialized .slick-slide{
   display: block;
 }
-
+ 
 
 
 .popup{
@@ -436,16 +466,22 @@ border: 4px solid #2F3B69;
   align-items: center ;
   justify-content: center;
   background-color: white;
+  flex-direction: column; /* Ensure the items stack vertically */
+  text-align: center;
 }
 .card{
   background-color: #fff;
   border-radius: 25px;
   width: 320px;
 }
+.section-title{
+  text-align: center;
+  display: block; /* Ensures it behaves as a block element */
+}
 
 .slide-content{
   margin: 0 40px;
-  padding: 45px 20px ;
+  padding: 45px 20px ; 
 }
 .image-content, .card-content{
   display: flex;
@@ -495,15 +531,48 @@ border: 4px solid #2F3B69;
 .slide-container{
   max-width: 1120px;
   width: 100%;
-  background-color: #2F3B69;
+  background-color: lightgray;
   padding: 40px;
 }
-/* 
- .swiper-navBtn{
-  color: #03C03C;
- }
-  */
 
+ .swiper-navBtn{
+  color: white;
+  transition: color 0.3s ease;
+ }
+ .swiper-navBtn:hover{
+  color:  #03C03C;
+ }
+ .swiper-navBtn::before, .swiper-navBtn::after{
+  font-size: 40px;
+ } 
+
+ .swiper-button-next{
+  right: 0; 
+ }
+
+ .swiper-button-prev{
+  left: 0;
+ }
+
+ .swiper-pagination-bullet{
+ background-color: #03C03C;
+ opacity: 1;
+   
+ }
+
+ .swiper-pagination-bullet-active{
+  background-color: #03C03C;
+ }
+
+ @media screen and (max-width: 768 ) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none ;
+  }
+  
+ }
 
 
   @media screen and (max-width: 680px) {

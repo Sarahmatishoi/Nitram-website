@@ -34,22 +34,8 @@ $(document).ready(function () {
 });
 
 
-// const parentContainer = document.querySelector('.read-more-container');
 
-// parentContainer.addEventListener('click', event => {
 
-//   const current = event.target;
-
-//   const isReadMoreBtns = current.className.includes('read-more-btn');
-
-//   if (!isReadMoreBtns) return;
-
-//   const currentText = event.target.parentNode.querySelector('.read-more-text')
-
-//   currentText.classList.toggle('read-more-text--show');
-
-//   current.textContent = current.textContent.includes('Read More') ?
-//   "Read Less..." : "Read More...";
 // });
 
 //------ javascript for readmore button in the services section-------
@@ -124,10 +110,10 @@ var swiper = new Swiper(".slide-content", {
   spaceBetween: 25,
   // slidesPerGroup: 3,
   loop: true,
-  centerSlide: true,
-  fade: true,
-  gragcursor: true,
-  loopFillGroupWithBlank: true,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  // loopFillGroupWithBlank: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -137,4 +123,20 @@ var swiper = new Swiper(".slide-content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev", // Corrected the property name from 'preEl' to 'prevEl'
   },
+
+  breakpoints:{
+    0: {
+      slidesPerView: 1,
+
+    },
+    520: {
+      slidesPerView: 2,
+
+    },
+     950: {
+      slidesPerView: 3,
+
+    },
+  },
 });
+

@@ -27,11 +27,13 @@
   <!-- google apis link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-  <!-- slick-carousel css link -->
+  <!-- slick-carousel js link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- <iframe src="./program.html" frameborder="0" style="height: 100vh;width: 100vw;"></iframe> -->
 
   <nav class="navbar  navbar-expand-lg fixed-top" data-aos="fade-down">
     <div class="container-fluid">
@@ -43,7 +45,6 @@
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -57,13 +58,7 @@
             <li class="nav-item">
               <a class="nav-link mx-lg-2" href="#services"> Services</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="#"> Programs</a> -->
-            <!-- <div class="sub-menu1">
-                <ul>
-                  <li>GAS4E</li>
-                </ul>
-              </div> -->
+          
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 data-aos="fade-up">
@@ -71,29 +66,12 @@
               </a>
 
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" data-aos="fade-up">Structured Attatchment</a></li>
+                <li><a class="dropdown-item" href="#" data-aos="fade-up">IFRS Trainings</a></li>
                 <!-- <li><a class="dropdown-item" href="#">Introduction</a></li>
                   <li><a class="dropdown-item" href="#">Testimonials</a></li> -->
-                <li><a class="dropdown-item" href="program.html" data-aos="fade-up">Gas4e</a></li>
+                <li><a class="dropdown-item" href="program.html" data-aos="fade-up">Graduates Program</a></li>
 
-                <!-- <li class="nav-item dropend">
-                  <a 
-                 
-                     data-aos="fade-up"
-                     href="program.html" >
-                    GAS4E
-                  </a> -->
-                <!-- class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" -->
-                <!-- <ul class="dropdown-menu" data-aos="fade-up">
-                    <li><a class="dropdown-item" href="program.html#overview">Program Overview</a></li>
-                    <li><a class="dropdown-item" href="program.html#intro">Introduction</a></li>
-                    <li><a class="dropdown-item" href="program.html#target">For Who?</a></li>
-                    <li><a class="dropdown-item" href="program.html#objective">Program Objectives</a></li>
-                    <li><a class="dropdown-item" href="program.html#structure">Program Structure</a></li>
-                    <li><a class="dropdown-item" href="program.html#testimonials">Testimonials</a></li>
-
-                  </ul> -->
+              
             </li>
 
           </ul>
@@ -126,8 +104,8 @@
       <div class="row">
         <div class="col-12">
           <h1 class="display-4" data-aos="zoom-in"> Nitram Accountants-Africa</h1>
-          <p class="my-4" data-aos="fade-right">We are the home of cross-industry tailored solutions.</p>
-          <a href="#about" class="btn btn-main getStartedBtn" data-aos="fade-up" onclick="scrollToAbout()"> Get Started</a>
+          <p class="my-4" data-aos="fade-right" data-aos-duration="1500">We are the home of cross-industry tailored solutions.</p>
+          <a href="#about" class="btn btn-main getStartedBtn" data-aos="zoom-in" data-aos-duration="1500" onclick="scrollToAbout()"> Get Started</a>
         </div>
       </div>
     </div>
@@ -369,10 +347,10 @@
   <!-- -------Our Team------- -->
 
   <section id="team">
-    <!-- <h2 class="heading" data-aos="fade-up" >Meet The Team</h2> -->
-    <div class="slide-container swiper">
+    <h2 class="section-title" data-aos="fade-up" >Our Team</h2>
+    <div class="slide-container swiper" data-aos="zoom-in" data-aos-duration="1500">
       <div class="slide-content">
-        <div class="card-wrapper swiper-wrapper">
+        <div class="card-wrapper swiper-wrapper" data-aos="zoom-in" data-aos-duration="1500">
           <div class="card swiper-slide">
             <div class="image-content">
               <span class="overlaye"></span>
@@ -505,11 +483,11 @@
       <div class="row text-center text-md-left">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-black">Nitram Accountants-Africa</h5>
-          <h6 class="text-success">We Promise</h6>
+          <h6  style="color: #2F3B69;">We Promise</h6>
           <p>We shall endeavour to adhere to the ethical standards as laid in the IFAC Code of Ethics. </p>
         </div>
         <div class="col-md-2 col-lg-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-success " style="margin: 0;"> Services</h5>
+          <h5 class="text-uppercase mb-4 font-weight-bold  " style="margin: 0; color: #2F3B69;"> Services</h5>
           <p> Accounting
             <!-- <a href="#" class="text-dark" style="text-decoration: none;">Accounting</a> -->
           </p>
@@ -524,43 +502,43 @@
           </p>
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
-          <h5 class="text-capitalize mb-4 text-success "> Links</h5>
+          <h5 class="text-capitalize mb-4  " style="color: #2F3B69;"> Links</h5>
           <p>
-            <a href="#home" class="text-dark" style="text-decoration: none; font-weight: normal;">Home</a>
+            <a href="#home" class="text-dark link-hover" style="text-decoration: none; font-weight: normal;">Home</a>
           </p>
           <p>
-            <a href="#about" class="text-dark" style="text-decoration: none;font-weight: normal;">About</a>
+            <a href="#about" class="text-dark link-hover" style="text-decoration: none;font-weight: normal;">About</a>
           </p>
           <p>
-            <a href="#services" class="text-dark" style="text-decoration: none; font-weight: normal;">Services</a>
+            <a href="#services" class="text-dark link-hover" style="text-decoration: none; font-weight: normal;">Services</a>
           </p>
           <p>
-            <a href="#programs" class="text-dark" style="text-decoration: none; font-weight: normal;">Programs</a>
+            <a href="#programs" class="text-dark link-hover" style="text-decoration: none; font-weight: normal;">Programs</a>
           </p>
           <p>
-            <a href="#partners" class="text-dark" style="text-decoration: none; font-weight: normal;">Our Partners</a>
+            <a href="#partners" class="text-dark link-hover" style="text-decoration: none; font-weight: normal;">Our Partners</a>
           </p>
         </div>
         <div class="col-md-4 col-lg-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold>Contacts text-success"> Contacts </h5>
+          <h5 class="text-uppercase mb-4 font-weight-bold>Contacts" style="color: #2F3B69;"> Contacts </h5>
           <p>
-            <i class="fas fa-location-dot mr-3" style="padding: 10px;"></i> P.O BOX 1186-00515 CPA Centre, 2nd Fl, Right
+            <i class="fas fa-location-dot mr-3" style="padding: 10px; color: #2F3B69;"></i> P.O BOX 1186-00515 CPA Centre, 2nd Fl, Right
             Wing,Ruaraka, Thika
             Road, Nairobi Kenya.
           </p>
           <p>
-            <i class="fas fa-envelope mr-3" style="padding: 10px;"></i>info@nitramadvisory.com
+            <i class="fas fa-envelope mr-3" style="padding: 10px; color: #2F3B69;"></i>info@nitramadvisory.com
           </p>
           <p>
-            <i class="fas fa-phone mr-3" style="padding: 10px;"></i>+254 792 429 183
+            <i class="fas fa-phone mr-3" style="padding: 10px; color: #2F3B69;"></i>+254 792 429 183
           </p>
           <p>
-            <i class="fas fa-phone mr-3" style="padding: 10px;"></i>+254 733 824 435
+            <i class="fas fa-phone mr-3" style="padding: 10px; color: #2F3B69;"></i>+254 733 824 435
           </p>
 
         </div>
       </div>
-      <hr class="mb-4" style=" border: double;">
+      <hr class="mb-4" style=" border: double; color: #2F3B69;">
       <div class="row align-items-center">
         <div class="col-md-7 col-lg-8">
           <p class="text-black align-items-center"> © Copyright 2024 Nitram Advisory Limited All rights reserved.</p>

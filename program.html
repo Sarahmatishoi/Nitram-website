@@ -5,14 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Nitram Accountants-Africa</title>
+
+    <!-- favicon Image -->
     <link rel="icon" type="image/x-icon" type="image/x-icon" sizes="16x16" href="Images/favicon.ico/favicon (1).ico" />
+
+    <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Bundle with Popper.js links  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-VCBgg1RijABD0p2PqEZ9H3JYwVsOsksXlJdP5gf0zI6K9z9jjEcUq1RCUHbD47wJ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-sgJjXQN6fzF6Ew7TU1gav4Dr+pTTyxFiVE1JdZbXWz5/pQm0u9p/6GJCWHfAxPk/"
+        crossorigin="anonymous"></script>
+
+    <!-- css link -->
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- slick-carousel css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
 
     <style>
@@ -22,98 +43,7 @@
             font-family: "Roboto", sans-serif;
             overflow-x: hidden;
         }
-
-
-        #sidebar-wrapper {
-            z-index: 1000;
-            position: fixed;
-            left: 250px;
-
-            width: 0;
-            height: 100%;
-            margin-left: -250px;
-            overflow-y: auto;
-            background-color: lightgray;
-
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
-
-
-
-        /* Sidebar Styles */
-
-        .sidebar-nav {
-            position: absolute;
-            top: 0;
-            right: 15px;
-            width: 200px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .sidebar-nav li {
-            text-indent: 20px;
-            line-height: 40px;
-        }
-
-        .sidebar-nav li a {
-            /* display: block; */
-            text-decoration: none;
-            color: #03C03C;
-        }
-
-        .sidebar-nav li a:hover {
-            text-decoration: none;
-            color: #2F3B69;
-            /* background: lightgrey; */
-        }
-
-        .sidebar-nav li a:active,
-        .sidebar-nav li a:focus {
-            text-decoration: none;
-        }
-
-        .sidebar-nav>.sidebar-brand {
-            height: 65px;
-            font-size: 18px;
-            line-height: 60px;
-        }
-
-        .sidebar-nav>.sidebar-brand a {
-            color: #03C03C;
-        }
-
-        .sidebar-nav>.sidebar-brand a:hover {
-            color: #2F3B69;
-            background: none;
-        }
-
-
-        /* Back button styling */
-
-        #backToMainPage {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #2F3B69;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-            z-index: 999;
-            border-radius: 20px;
-        }
-
-/* Registration and hire button styling */
+        /* Registration and hire button styling */
         .buttons button {
             padding: 0.75rem 1.5rem;
             font-size: 1rem;
@@ -156,158 +86,127 @@
             background-attachment: fixed;
         }
 
+        .hiring {
+            background-color: #2F3B69;
+        }
 
-        
+        .customer-logos {
+            width: 80%;
+            margin: auto;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+
         @media(min-width:768px) {
-            #wrapper {
-                padding-left: 220px;
-            }
-
-            #wrapper.toggled {
-                padding-left: 0;
-            }
-
-            #sidebar-wrapper {
-                width: 200px;
-            }
-
-            #wrapper.toggled #sidebar-wrapper {
-                width: 40px;
-
-
-            }
-
-            #wrapper.toggled span {
-                visibility: hidden;
-
-            }
-
-            #wrapper.toggled i {
-                float: right;
+            .buttons button {
+                /* margin-right: 50%; */
             }
         }
 
-        @media(max-width:414px) {
-
-            #wrapper.toggled #page-content-wrapper {
-                position: absolute;
-                margin-right: 60px;
-            }
-
-            #wrapper.toggled {
-                padding-right: 60px;
-            }
-
-            #wrapper {
-                padding-left: 20px;
-            }
-
-            #wrapper.toggled {
-                padding-left: 0;
-            }
-
-            #sidebar-wrapper {
-                width: 50px;
-            }
-
-
-
-        }
     </style>
 </head>
 
 
-<body>
-   
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
     <nav class="navbar  navbar-expand-lg fixed-top" data-aos="fade-down">
         <div class="container-fluid">
-          <a class="navbar-brand me-auto" href="#"> <img src="Images/logo1.png" alt="" width="200" height="80"></a>
-    
-          <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#about"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#services"> Services</a>
-                </li>
-                <!-- <li class="nav-item">
+            <a class="navbar-brand me-auto" href="#"> <img src="Images/logo1.png" alt="" width="200" height="80"></a>
+
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="index.html#about"> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="index.html#services"> Services</a>
+                        </li>
+                        <!-- <li class="nav-item">
                   <a class="nav-link mx-lg-2" href="#"> Programs</a> -->
-                <!-- <div class="sub-menu1">
+                        <!-- <div class="sub-menu1">
                     <ul>
                       <li>GAS4E</li>
                     </ul>
                   </div> -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                    data-aos="fade-up">
-                    Programs
-                  </a>
-    
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#" data-aos="fade-up">Structured Attatchment</a></li>
-                    <!-- <li><a class="dropdown-item" href="#">Introduction</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-aos="fade-up">
+                                Programs
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <!-- <li><a class="dropdown-item" href="#" data-aos="fade-up">Structured Attatchment</a></li> -->
+                                <!-- <li><a class="dropdown-item" href="#">Introduction</a></li>
                       <li><a class="dropdown-item" href="#">Testimonials</a></li> -->
-                    <li><a class="dropdown-item" href="program.html" data-aos="fade-up">Gas4e</a></li>
-    
-                    <!-- <li class="nav-item dropend">
-                      <a 
-                     
-                         data-aos="fade-up"
-                         href="program.html" >
-                        GAS4E
-                      </a> -->
-                    <!-- class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" -->
-                    <!-- <ul class="dropdown-menu" data-aos="fade-up">
-                        <li><a class="dropdown-item" href="program.html#overview">Program Overview</a></li>
-                        <li><a class="dropdown-item" href="program.html#intro">Introduction</a></li>
-                        <li><a class="dropdown-item" href="program.html#target">For Who?</a></li>
-                        <li><a class="dropdown-item" href="program.html#objective">Program Objectives</a></li>
-                        <li><a class="dropdown-item" href="program.html#structure">Program Structure</a></li>
-                        <li><a class="dropdown-item" href="program.html#testimonials">Testimonials</a></li>
-    
-                      </ul> -->
-                </li>
-    
-              </ul>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#team"> Our Team</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#partners"> Our Partners</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#contact"> Contact</a>
-              </li>
-    
-    
-              </ul>
-    
+                                <!-- <li><a class="dropdown-item" href="program.html" data-aos="fade-up">Gas4e</a></li> -->
+                                <a data-aos="fade-up" class="nav-link dropdown-toggle" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" href="program.html">
+                                    Structured Attatchment
+                                </a>
+                                <li class="nav-item dropend">
+
+                                    <a data-aos="fade-up" class="nav-link dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" href="program.html">
+                                        GAS4E
+                                    </a>
+
+                                    <ul class="dropdown-menu" data-aos="fade-up">
+                                        <li><a class="dropdown-item" href="program.html#overview">Program Overview</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="program.html#intro">Introduction</a></li>
+                                        <li><a class="dropdown-item" href="program.html#target">For Who?</a></li>
+                                        <li><a class="dropdown-item" href="program.html#objective">Program
+                                                Objectives</a></li>
+                                        <li><a class="dropdown-item" href="program.html#structure">Program Structure</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="program.html#testimonials">Testimonials</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="program.html#hiring">Hiring Partners</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="index.html#team"> Our Team</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="index.html#partners"> Our Partners</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="index.html#contact"> Contact</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
-    
+    </nav>
 
-
-    <div id="sidebar-wrapper">
+    <!-- <div id="sidebar-wrapper">
 
         <ul class="sidebar-nav" style="margin-left:0;">
             <h2 class="h-100 text-black">GAS4E</h2>
@@ -330,15 +229,13 @@
                 <a href="#testimonials"> <span style="margin-left:10px;">Testimonials</span> </a>
             </li>
         </ul>
-    </div>
-
-
+    </div> -->
 
     <section class="hero">
-        <h1 style="color: black;" data-aos="fade-up">GAS4E Program</h1>
-        <p style="font-weight: 700 !important; color: white;" data-aos="fade-down">Revolutionize your Accounting and
+        <h1 style="color: #03C03C;" data-aos="fade-up">GAS4E Program</h1>
+        <p style="font-weight: 700 !important; color: white;" data-aos="fade-down" data-aos-duration="1500">Revolutionize your Accounting and
             Finance career: Embrace the future of Accounting and Finance with Us!</p>
-        <div class="buttons">
+        <div class="buttons" >
             <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefaPt7Bajwn85mnKqooProreR6k5tEkIx_LlalcStkbqFsBQ/viewform?embedded=true" width="640" height="2032" frameborder="0" marginheight="0" marginwidth="0" target="_blank">Loading… -->
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSefaPt7Bajwn85mnKqooProreR6k5tEkIx_LlalcStkbqFsBQ/viewform?embedded=true"
                 target="_blank">
@@ -354,10 +251,13 @@
             </a>
         </div>
     </section>
+
+
     <section>
         <div id="overview">
             <h2 data-aos="fade-up">Program Overview </h2>
-            <p data-aos="zoom-in" data-aos-duration="1500">Finance and accountants' roles are to evaluate the entirety of the company's financial situation and to
+            <p data-aos="zoom-in" data-aos-duration="1500">Finance and accountants' roles are to evaluate the entirety
+                of the company's financial situation and to
                 turn this into insights <br> and recommendations that help the management team meet its financial goals.
             </p>
 
@@ -373,7 +273,8 @@
 
             <div id="target">
                 <h2 data-aos="fade-up">For Who? </h2>
-                <p data-aos="zoom-in" data-aos-duration="1500">The GAS4E program is designed to provide exceptional training and opportunities for graduates looking
+                <p data-aos="zoom-in" data-aos-duration="1500">The GAS4E program is designed to provide exceptional
+                    training and opportunities for graduates looking
                     to advance <br> their Accounting and Finance skills. Our comprehensive program covers the latest
                     advancements and best practices <br> in the industry, ensuring that our participants are
                     well-equipped to excel in their careers. </p>
@@ -381,9 +282,11 @@
 
             <div id="objective">
                 <h2 data-aos="fade-up">Program Objectives</h2>
-                <h6 style="text-align: center; color: #03C03C; font-weight: 600 !important;" data-aos="fade-right">The program aims to empower
+                <h6 style="text-align: center; color: #03C03C; font-weight: 600 !important;" data-aos="fade-right">The
+                    program aims to empower
                     graduates by:</h6>
-                <p data-aos="zoom-in" data-aos-duration="1500"> 1. Aligning their academic knowledge with market and industry expectations <br>
+                <p data-aos="zoom-in" data-aos-duration="1500"> 1. Aligning their academic knowledge with market and
+                    industry expectations <br>
                     2. Teaching industry-specific language and professional etiquette <br>
                     3. Providing a practical approach to work by applying tools commonly used by accountants</p>
 
@@ -392,14 +295,18 @@
             <div id="structure">
                 <h2 data-aos="fade-up"> Program Structure</h2>
                 <p>The GAS4E program has two stages, stage one takes 4 weeks while stage two takes 4 weeks as well.</p>
-                <h6 style="text-align: center; color: #03C03C; font-weight: 600 !important;" data-aos="fade-right">Stage 1 (first 4 weeks)
+                <h6 style="text-align: center; color: #03C03C; font-weight: 600 !important;" data-aos="fade-right">Stage
+                    1 (first 4 weeks)
                 </h6>
-                <p data-aos="zoom-in" data-aos-duration="1500"> 1. Graduate course review and alignment to market expectations <br>
+                <p data-aos="zoom-in" data-aos-duration="1500"> 1. Graduate course review and alignment to market
+                    expectations <br>
                     2. Industry language and professional etiquette <br>
                     3. Digital application tools both in the private sector and the public sector</p>
 
-                <h6 style="text-align: center; color: #03C03C; font-weight: 600 !important;" data-aos="fade-right">Stage 2 (last 4 weeks)</h6>
-                <p data-aos="zoom-in" data-aos-duration="1500"> 1. Business regulatory frameworks for both government and non-governmental organizations <br>
+                <h6 style="text-align: center; color: #03C03C; font-weight: 600 !important;" data-aos="fade-right">Stage
+                    2 (last 4 weeks)</h6>
+                <p data-aos="zoom-in" data-aos-duration="1500"> 1. Business regulatory frameworks for both government
+                    and non-governmental organizations <br>
                     2. Emotional intelligence and being street smart. <br>
                     3. Program review and evaluation <br>
                     4. Market linkages / entrepreneurship
@@ -412,19 +319,65 @@
             <div id="testimonials">
                 <h2>Testimonials</h2>
             </div>
-            <button id="backToMainPage">Back To Home </button>
+            <!-- <button id="backToMainPage">Back To Home </button> -->
 
     </section>
 
+
+    <section id="hiring" class="text-center hiring">
+        <div class="container">
+            <h2 data-aos="fade-up">Our Hiring Partners</h2>
+
+            <div class="customer-logos slider" data-aos="zoom-in" data-aos-duration="1500">
+                <!-- <div class="slide"> <a href="https://www.partner2.com" target="_blank"><img src="Images/google-logo-2020.jpg" alt=""> </a></div> -->
+                <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+                <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+                <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+                <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+                <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+                <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+                <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+                <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- slick js library links  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script>
-        document.getElementById('backToMainPage').addEventListener('click', function () {
-            window.location.href = 'http://127.0.0.1:5500/index.html'; 
+        $(document).ready(function () {
+            $('.customer-logos.slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
         });
     </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- <script src="script.js"></script> -->
     <script src="app.js"></script>
 </body>
 
