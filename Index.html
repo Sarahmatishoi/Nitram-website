@@ -330,11 +330,39 @@
           <span class="appoit-btn" id="button" data-aos="zoom-in" data-aos-duration="1500"> Make an Appointment</span>
           <div class="popup">
             <div class="popup-content">
-              <input type="text" placeholder="UserName">
-              <input type="password" placeholder="Password">
-              <input type="email" placeholder="Email">
+              <form action="#">
+                <div class="input-box">
+                  <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt"> Full name can't be blank</div>
+                  </div>
+                  <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <div class="error-txt">Email address can't be blank</div>
+                  </div> 
+                  <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt"> Phone Number can't be blank</div>
 
-              <a href="#" class="appoit-btn">Get in Touch</a>
+                  </div>
+                  <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt"> Subject can't be blank</div>
+
+                  </div> 
+                  <div class="textarea-field field" >
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                    <div class="error-txt"> Message can't be blank</div>
+
+                      </div>
+                </div>
+                <button type="submit" class="appoit-btn"> Get in Touch</button>
+              </form>
+              <!-- <input type="text" placeholder="UserName">
+              <input type="password" placeholder="Password">
+              <input type="email" placeholder="Email"> -->
+
+              <!-- <a href="#" class="appoit-btn">Get in Touch</a> -->
 
             </div>
           </div>
@@ -347,7 +375,8 @@
   <!-- -------Our Team------- -->
 
   <section id="team">
-    <h2 class="section-title" data-aos="fade-up" >Our Team</h2>
+    <h2 class="section-title" data-aos="fade-up" > Meet Our Team</h2>
+    <p>With a diverse range of expertise, our team is dedicated to providing excellent results and achieving your business needs</p>
     <div class="slide-container swiper" data-aos="zoom-in" data-aos-duration="1500">
       <div class="slide-content">
         <div class="card-wrapper swiper-wrapper" data-aos="zoom-in" data-aos-duration="1500">
@@ -583,6 +612,12 @@
   
   <!-- <script src="js/swiper.min.js"></script> -->
 
+  <!-- -------sweetalert message file ------- -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- ------smtp js file------ -->
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
   <!-- -----Javascript file------ -->
    
   <script src="js/script.js"></script>
