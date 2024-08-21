@@ -158,11 +158,11 @@ function sendEmail(){
   Subject: ${subject.value} <br>
   Message: ${message.value}`;
   Email.send({
-    Host : "smtp.elasticemail.com",
+    Host : "smtp.gmail.com",
     Username : "username",
     Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
+    To : ' nitramadvisoryllp@gmail.com',
+    From : document.getElementById("email").value,
     Subject : subject.value,
     Body : bodyMessage
 }).then(
@@ -201,11 +201,27 @@ function checkInputs(){
   }
 
 }
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
 
-  checkInputs();
 
-  // sendEmail();
-  
-});
+// JavaScript to toggle the 'hide-top-bar' class on scroll
+
+  document.addEventListener("scroll", function () {
+    console.log('Scroll event detected!');
+
+    const topBarHeight = document.querySelector('.top-bar').offsetHeight;
+    if (window.scrollY > topBarHeight) {
+      document.body.classList.add("hide-top-bar");
+    } else {
+      document.body.classList.remove("hide-top-bar");
+    }
+  });
+
+
+
+// navbar toogler code 
+// function toggleMenu() {
+//   const navItems = document.querySelector('.navbar'); 
+//   navItems.classList.toggle('navbar-toggler');
+// }
+
+// document.querySelector('.navbar-toggler').addEventListener('click', toggleMenu);

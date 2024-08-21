@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
-  <title>Nitram Accountants-Africa</title>
+  <title >Nitram Accountants-Africa </title>
   <link rel="icon" type="image/x-icon" type="image/x-icon" sizes="16x16" href="Images/favicon.ico/favicon (1).ico" />
   <!-- -----Bootstrap---- -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -35,8 +35,24 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
-  <!-- <iframe src="./program.html" frameborder="0" style="height: 100vh;width: 100vw;"></iframe> -->
 
+  <div class="top-bar text-light py-2">
+    <div class="container-fluid d-flex justify-content-between">
+      <!-- Phone Number Section -->
+      <div class="phone-number">
+        <i class="fas fa-phone" style="color:#03C03C ;"></i> +254-733-824 435
+      </div>
+      <!-- Social Media Icons Section -->
+      <div class="social-media-icons">
+        <a href="#" class="text-light mx-2"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="text-light mx-2"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="text-light mx-2"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="text-light mx-2"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  
   <nav class="navbar  navbar-expand-lg fixed-top" data-aos="fade-down">
     <div class="container-fluid">
       <a class="navbar-brand me-auto" href="#"> <img src="Images/logo1.png" alt="" width="200" height="80"></a>
@@ -105,7 +121,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="display-4" data-aos="zoom-in"> Nitram Accountants-Africa</h1>
+          <h1 class="display-4" data-aos="zoom-in" > Nitram Accountants-Africa</h1>
           <p class="my-4" data-aos="fade-right" data-aos-duration="1500">We are the home of cross-industry tailored solutions.</p>
           <a href="#about" class="btn btn-main getStartedBtn" data-aos="zoom-in" data-aos-duration="1500" onclick="scrollToAbout()"> Get Started</a>
         </div>
@@ -138,14 +154,14 @@
               </div>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" style="background-color: darkgray;">
               <div class="about-item text-center" data-aos="zoom-in" data-aos-duration="1500">
                 <i class="fa fa-globe"></i>
                 <h3>Why Us</h3>
                 <hr>
-                <p>1. We dedicate our best resources to ensure that your needs are met.</p>
-                <p>2. We dedicate our best resources to ensure that your needs are met.</p>
-                <p>3. We dedicate our best resources to ensure that your needs are met.</p>
+                <p style="text-align: left;">1. We dedicate our best resources to ensure that your needs are met.</p>
+                <p style="text-align: left;">2. To adhere to timelines and reporting deadline.</p>
+                <p style="text-align: left;">3. To provide constructive suggestions on improving processes and internal controls.</p>
 
               </div>
 
@@ -155,11 +171,11 @@
                 <i class="fa fa-pencil"></i>
                 <h3>Our Values</h3>
                 <hr>
-                <p> 1. Self-driven.</p>
-                <p> 2. Confidentiality.</p>
-                <p> 4. Competence.</p>
-                <p> 5. Integrity.</p>
-                <p> 3. Teamwork and effective communication.</p>
+                <p style="text-align: left;"> 1. Self-driven.</p>
+                <p style="text-align: left;"> 2. Confidentiality.</p>
+                <p style="text-align: left;"> 4. Competence.</p>
+                <p style="text-align: left;"> 5. Integrity.</p>
+                <p style="text-align: left;"> 3. Teamwork and effective communication.</p>
 
 
               </div>
@@ -327,12 +343,15 @@
     <div class="container text-white text-center">
       <div class="row">
         <div class="col-12 section-intro text text-center">
-          <h2 class="service-h " data-aos="fade-up">Outsourcing Services</h2>
+          <h2 class="service-h " data-aos="fade-up" >Outsourcing Services</h2>
           <p data-aos="zoom-in" data-aos-duration="1500">Comprehensive enterprise services & support</p>
           <span class="appoit-btn" id="button" data-aos="zoom-in" data-aos-duration="1500"> Make an Appointment</span>
           <div class="popup">
             <div class="popup-content">
-              <form action="#">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9ej2-dVcpPhTm5tlWbxVe_ntS1Qf_GElZZb6XbT9gEk2YLQ/viewform?embedded=true" width="500" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+             <!-- <form action="#" onsubmit="sendEmail(); reset(); return false;"> -->
+              <!-- <form  action="https://formsubmit.co/nitramadvisoryllp@gmail.com" method="POST">
+        
                 <div class="input-box">
                   <div class="input-field field">
                     <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
@@ -360,7 +379,7 @@
                 </div>
                 <button type="submit" class="appoit-btn"> Get in Touch</button>
               </form>
-              
+               -->
 
             </div>
           </div>
@@ -387,9 +406,8 @@
               </div>
             </div>
             <div class="card-content">
-              <h2 class="name"> David Dell</h2>
-              <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+              <h2 class="name"> CPA. Martin Waweru</h2>
+              <p class="description">Managing Partner </p>
             </div>
           </div>
           <div class="card swiper-slide">
@@ -401,9 +419,8 @@
               </div>
             </div>
             <div class="card-content">
-              <h2 class="name"> David Dell</h2>
-              <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+              <h2 class="name">Alice Wangui</h2>
+              <p class="description">Office Admin & Business Development</p>
             </div>
           </div>
           <div class="card swiper-slide">
@@ -415,9 +432,8 @@
               </div>
             </div>
             <div class="card-content">
-              <h2 class="name"> David Dell</h2>
-              <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+              <h2 class="name">Edwin Maina</h2>
+              <p class="description">Audit Manager </p>
             </div>
           </div>
           <div class="card swiper-slide">
@@ -429,9 +445,8 @@
               </div>
             </div>
             <div class="card-content">
-              <h2 class="name"> David Dell</h2>
-              <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+              <h2 class="name"> Leah Waithera</h2>
+              <p class="description">Senior Auditor </p>
             </div>
           </div>
           <div class="card swiper-slide">
@@ -443,9 +458,8 @@
               </div>
             </div>
             <div class="card-content">
-              <h2 class="name"> David Dell</h2>
-              <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+              <h2 class="name"> Patrick Kuthii</h2>
+              <p class="description"> Senior Accountant</p>
             </div>
           </div>
           <div class="card swiper-slide">
@@ -457,9 +471,8 @@
               </div>
             </div>
             <div class="card-content">
-              <h2 class="name"> David Dell</h2>
-              <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+              <h2 class="name">Nichodemus Muhoho</h2>
+              <p class="description">Senior Auditor </p>
             </div>
           </div>
         </div>
@@ -478,7 +491,7 @@
     <div class="container">
       <h2 data-aos="fade-up">Our Partners</h2>
       <div class="customer-logos slider" data-aos="zoom-in" data-aos-duration="1500">
-        <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+        <div class="slide"><img src="Images/Nitram_Logo.jpg" alt=""></div>
         <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
         <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
         <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
@@ -493,63 +506,70 @@
   </section>
 
   <!-- -----footer---- -->
-  <section id="contact" class=" text-dark ">
+  <section id="contact" class=" text-dark " ststyle="text-align: left;">
     <!-- <div class="bg-dark text-white pt-5 pb-4"> -->
     <div class="container text-center text-md-left">
       <div class="row text-center text-md-left">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-black">Nitram Accountants-Africa</h5>
           <h6  style="color: #2F3B69;">We Promise</h6>
-          <p>We shall endeavour to adhere to the ethical standards as laid in the IFAC Code of Ethics. </p>
+          <p >We shall endeavour to adhere to the ethical standards as laid in the IFAC Code of Ethics. </p>
         </div>
         <div class="col-md-2 col-lg-2 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold  " style="margin: 0; color: #2F3B69;"> Services</h5>
-          <p> Accounting
+          <p style="text-align: left;"> Accounting
             <!-- <a href="#" class="text-dark" style="text-decoration: none;">Accounting</a> -->
           </p>
-          <p> Auditing
+          <p style="text-align: left;"> Auditing
             <!-- <a href="#" class="text-dark" style="text-decoration: none;">Auditing</a> -->
           </p>
-          <p> Taxation
+          <p style="text-align: left;"> Taxation
             <!-- <a href="#" class="text-dark" style="text-decoration: none;">Taxation</a> -->
           </p>
-          <p> Advisory
+          <p style="text-align: left;"> Advisory
             <!-- <a href="#" class="text-dark" style="text-decoration: none;">Advisory</a> -->
           </p>
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
-          <h5 class="text-capitalize mb-4  " style="color: #2F3B69;"> Links</h5>
-          <p>
-            <a href="#home" class="text-dark link-hover" style="text-decoration: none; font-weight: normal;">Home</a>
+          <h5 class="text-uppercase mb-4 font-weight-bold  " style="margin: 0; color: #2F3B69;"> Links</h5>
+          <p style="text-align: left;">
+            <a href="#home" class="text-dark link-hover" style="text-decoration: none; font-weight: normal; ">Home</a>
           </p>
-          <p>
+          <p style="text-align: left;">
             <a href="#about" class="text-dark link-hover" style="text-decoration: none;font-weight: normal;">About</a>
           </p>
-          <p>
+          <p style="text-align: left;">
             <a href="#services" class="text-dark link-hover" style="text-decoration: none; font-weight: normal;">Services</a>
           </p>
-          <p>
+          <p style="text-align: left;">
             <a href="#programs" class="text-dark link-hover" style="text-decoration: none; font-weight: normal;">Programs</a>
           </p>
-          <p>
+          <p style="text-align: left;">
             <a href="#partners" class="text-dark link-hover" style="text-decoration: none; font-weight: normal;">Our Partners</a>
           </p>
         </div>
         <div class="col-md-4 col-lg-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold>Contacts" style="color: #2F3B69;"> Contacts </h5>
-          <p>
-            <i class="fas fa-location-dot mr-3" style="padding: 10px; color: #2F3B69;"></i> P.O BOX 1186-00515 CPA Centre, 2nd Fl, Right
+        
+             <a href="https://www.google.com/maps/place/CPA+Centre/@-1.2533094,36.8548066,17z/data=!3m1!4b1!4m6!3m5!1s0x182f171bb37a8e69:0x773a9553aa5c274e!8m2!3d-1.2533148!4d36.85942!16s%2Fg%2F11fn1gtlv1?entry=ttu" style="text-decoration: none; ;">
+              <i class="fas fa-location-dot mr-3" style="padding: 10px; color: #2F3B69;"></i> </a> 
+            
+              <p style="text-align: left;">
+                P.O BOX 1186-00515 CPA Centre, 2nd Fl, Right
+            
+            <!-- <i class="fas fa-location-dot mr-3" style="padding: 10px; color: #2F3B69;"></i> P.O BOX 1186-00515 CPA Centre, 2nd Fl, Right -->
             Wing,Ruaraka, Thika
             Road, Nairobi Kenya.
+
           </p>
-          <p>
+          <p style="text-align: left;">
             <i class="fas fa-envelope mr-3" style="padding: 10px; color: #2F3B69;"></i>info@nitramadvisory.com
           </p>
-          <p>
-            <i class="fas fa-phone mr-3" style="padding: 10px; color: #2F3B69;"></i>+254 792 429 183
-          </p>
-          <p>
+          <p style="text-align: left;">
             <i class="fas fa-phone mr-3" style="padding: 10px; color: #2F3B69;"></i>+254 733 824 435
+          </p>
+          <p style="text-align: left;">
+            <i class="fas fa-phone mr-3" style="padding: 10px; color: #2F3B69;"></i>+254 792 429 183
           </p>
 
         </div>
@@ -568,15 +588,15 @@
                     class="fa-brands fa-linkedin"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.instagram.com/" class="btn-floating btn-sm text-white" style="font-size: 1rem;"><i
+                <a href="https://www.instagram.com/accountantsafrica/" class="btn-floating btn-sm text-white" style="font-size: 1rem;"><i
                     class="fa-brands fa-instagram"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/" class="btn-floating btn-sm text-white" style="font-size: 1rem;"> <i
+                <a href="https://www.facebook.com/profile.php?id=61562294585163" class="btn-floating btn-sm text-white" style="font-size: 1rem;"> <i
                     class="fa-brands fa-facebook"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://x.com/" class="btn-floating btn-sm text-white" style="font-size: 10px;"> <i
+                <a href="https://x.com/NitramAfrica" class="btn-floating btn-sm text-white" style="font-size: 10px;"> <i
                     class="fa-brands fa-x-twitter"></i></a>
               </li>
             </ul>

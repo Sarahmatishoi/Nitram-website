@@ -43,6 +43,7 @@
             font-family: "Roboto", sans-serif;
             overflow-x: hidden;
         }
+ 
         /* Registration and hire button styling */
         .buttons button {
             padding: 0.75rem 1.5rem;
@@ -76,6 +77,12 @@
             margin-top: -52px;
 
         }
+        .dropdown-item{
+            background-color: #03C03C;
+        }
+        .dropdown-item:hover{
+            background-color: #2F3B69;
+        }
 
         /* Landing page styling  */
         .hero {
@@ -101,11 +108,26 @@
         }
 
 
-        @media(min-width:768px) {
-            .buttons button {
-                /* margin-right: 50%; */
-            }
-        }
+        @media screen and (max-width: 768px) {
+    .buttons button {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-self: center;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        width: 80%; 
+        margin: 20px 0; 
+    }
+
+    .register-btn,
+    .hire-btn {
+        margin-top: 10px;
+    }
+}
+
+
+
 
     </style>
 </head>
@@ -137,13 +159,7 @@
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="index.html#services"> Services</a>
                         </li>
-                        <!-- <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#"> Programs</a> -->
-                        <!-- <div class="sub-menu1">
-                    <ul>
-                      <li>GAS4E</li>
-                    </ul>
-                  </div> -->
+                     
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false" data-aos="fade-up">
@@ -151,10 +167,6 @@
                             </a>
 
                             <ul class="dropdown-menu">
-                                <!-- <li><a class="dropdown-item" href="#" data-aos="fade-up">Structured Attatchment</a></li> -->
-                                <!-- <li><a class="dropdown-item" href="#">Introduction</a></li>
-                      <li><a class="dropdown-item" href="#">Testimonials</a></li> -->
-                                <!-- <li><a class="dropdown-item" href="program.html" data-aos="fade-up">Gas4e</a></li> -->
                                 <li><a class="dropdown-item" href="ifrs.html" data-aos="fade-up">IFRS Trainings</a></li>
 
                                 <li class="nav-item dropend">
@@ -165,7 +177,7 @@
                                     </a>
 
                                     <ul class="dropdown-menu" data-aos="fade-up">
-                                        <li><a class="dropdown-item" href="program.html#overview">Program Overview</a>
+                                        <li><a class="dropdown-item" href="program.html#overview" style="background-color: #03C03C; color: black;">Program Overview</a>
                                         </li>
                                         <li><a class="dropdown-item" href="program.html#intro">Introduction</a></li>
                                         <li><a class="dropdown-item" href="program.html#target">For Who?</a></li>
@@ -305,7 +317,7 @@
 
             <div class="customer-logos slider" data-aos="zoom-in" data-aos-duration="1500">
                 <!-- <div class="slide"> <a href="https://www.partner2.com" target="_blank"><img src="Images/google-logo-2020.jpg" alt=""> </a></div> -->
-                <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
+                <div class="slide"><img src="Images/Nitram_Logo.jpg" alt=""></div>
                 <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
                 <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
                 <div class="slide"><img src="Images/google-logo-2020.jpg" alt=""></div>
@@ -318,7 +330,11 @@
         </div>
     </section>
 
+     <!-- -----Bootstrap js----- -->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
     <!-- slick js library links  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
