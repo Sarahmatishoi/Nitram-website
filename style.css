@@ -43,7 +43,6 @@ h1,h2,h3,h4,h5,h6{
   background-color: lightgray; 
 }
 /* Top Bar Styles */
-/* Top Bar Styles */
 .top-bar {
   position: fixed;
   top: 0;
@@ -99,6 +98,34 @@ h1,h2,h3,h4,h5,h6{
   background-color: #2F3B69;
 }
 
+
+@media (max-width: 768px) {
+  .top-bar {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px 0; /* Reduce padding */
+  }
+
+  .top-bar .phone-number, .top-bar .social-media-icons {
+    text-align: center; /* Center align content */
+  }
+}
+
+/* Media Query for Extra Small Screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .top-bar {
+    font-size: 12px; /* Further reduce font size */
+    padding: 5px 0; /* Further reduce padding */
+  }
+
+  .top-bar .phone-number, .top-bar .social-media-icons {
+    display: flex; /* Stack content vertically */
+    text-align: center;
+  }
+
+  .top-bar .social-media-icons {
+    margin-top: 5px; /* Add some space between phone number and social icons */
+  }
+}
 .nav-link{
   color:#2F3B69;
   font-weight: 500;
@@ -534,6 +561,7 @@ gap: 1rem;
 .slick-initialized .slick-slide{
   display: block;
 }
+
  
 
 

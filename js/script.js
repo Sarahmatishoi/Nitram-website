@@ -10,29 +10,42 @@ function scrollToAbout() {
 
 $(document).ready(function () {
   $('.customer-logos').slick({
-    slidesToShow: 6,
+    slidesToShow: 6, // Default number of slides to show
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
     arrows: false,
     dots: false,
-    pauseOrHover: false,
-    responsive: [{
-      breakpoint: 768,
-      setting: {
-        slidesToShow: 4
-
-      }
-    }, {
-      breakpoint: 520,
-      setting: {
-        slidesToShow: 3
-      }
-
-    }]
+    pauseOnHover: false,
+    centerMode: true, // Center-align slides
+    responsive: [
+      {
+        breakpoint: 1024, // Medium screens (e.g., tablets)
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 768, // Smaller screens
+        settings: {
+          slidesToShow: 2, // Display 2 slides
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 480, // Very small screens (e.g., phones)
+        settings: {
+          slidesToShow: 1, // Display 1 slide
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+    ],
   });
 });
-
 
 
 
