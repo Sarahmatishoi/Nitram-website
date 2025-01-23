@@ -49,6 +49,12 @@ h1,h2,h3,h4,h5,h6{
   width: 100%;
   z-index: 1001;
   transition: top 0.3s;
+  /* background-color: #707070; */
+  transition: transform 0.5s ease-in-out;
+}
+
+.top-bar.hidden {
+  transform: translateY(-100%);
 }
 
 /* Phone Number Styling */
@@ -730,9 +736,17 @@ border: 4px solid #2F3B69;
  }
 
 
-  @media screen and (max-width: 680px) {
+  /* @media screen and (max-width: 680px) {
     .getStartedBtn {
     margin-left:80px !important;
     }
-  }
+  } */
 
+  @media (max-width: 576px) {
+    .getStartedBtn {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+  

@@ -238,3 +238,26 @@ function checkInputs(){
 // }
 
 // document.querySelector('.navbar-toggler').addEventListener('click', toggleMenu);
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+// Set the year dynamically
+document.getElementById('year').textContent = currentYear;
+
+
+let lastScrollPosition = 0;
+    const topBar = document.querySelector('.top-bar');
+    
+    window.addEventListener('scroll', () => {
+      const currentScrollPosition = window.pageYOffset;
+      
+      if (currentScrollPosition > lastScrollPosition) {
+        // Scrolling down
+        topBar.classList.add('hidden');
+      } else {
+        // Scrolling up
+        topBar.classList.remove('hidden');
+      }
+      
+      lastScrollPosition = currentScrollPosition;
+    });
